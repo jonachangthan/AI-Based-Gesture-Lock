@@ -4,4 +4,5 @@ numpy
 pandas
 tensorflow
 scikit-learn
+protobuf<3.20.x
 streamlit
