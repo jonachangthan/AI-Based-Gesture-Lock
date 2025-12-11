@@ -1,8 +1,9 @@
 opencv-python-headless
 mediapipe
-numpy
+numpy<2
 pandas
-tensorflow
+tensorflow-cpu
 scikit-learn
 streamlit
+protobuf<3.20.x
 
