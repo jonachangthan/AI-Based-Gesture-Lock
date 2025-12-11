@@ -79,6 +79,7 @@ def run_login_process(model, hands, mp_hands):
     gesture_triggered = False 
 
     st.info(f"🟢 請輸入手勢密碼進行解鎖 (密碼長度: {len(SAVED_PASSWORD)})")
+    st.info("💡 提示：若要輸入連續相同手勢（如拳頭、拳頭），請在兩次之間將手放下。")
     stop_btn = st.button("停止/返回")
     
     image_placeholder = st.empty()
@@ -249,4 +250,5 @@ if __name__ == "__main__":
     if st.session_state['logged_in']:
         main_dashboard()
     else:
+
         auth_portal()
